@@ -2,5 +2,6 @@ from django.urls import path
 from .views import *
 
 urlpatterns = [
-    path('socialSignup', AuthAPIView.as_view(), name= "social-signup"),
+    path('verified', AuthenticatedView.as_view()),
+    path('register', RegisterUser.as_view()),
 ]
