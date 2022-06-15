@@ -6,11 +6,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-home': "url('/img/hero-pattern.svg')",
-        'footer-texture': "url('/img/footer-texture.png')",
-      }
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require('@tailwindcss/forms')],
 }
